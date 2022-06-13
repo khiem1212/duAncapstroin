@@ -1,0 +1,60 @@
+
+
+
+@mixin titleSmall($fs : $text-14, $fw: $text-semiBold , $c: $c-small-title , $tranform: uppercase , $lh : 30px , $lSpacing: 1px ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    text-transform: $tranform;
+    line-height: $lh;
+    letter-spacing: $lSpacing;
+
+}
+
+@mixin titleBig($fs : $text-35, $fw: $text-bold , $c: $c-bluedark-400 , $lh : 45px ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+
+}
+
+@mixin Button ($padding: 15px 50px ,$radius : 8px, $lh : 18px  , $fs : $text-18 ,$fw: $text-semiBold , $color : $c-white , $bg : $c-green-300 , $border : 1px solid $c-green-300 ){
+
+    border: $border;
+    border-radius: $radius;
+    padding: $padding;
+    line-height: $lh;
+    font-size: $fs;
+    font-weight: $fw;
+    transition: 0.3s ease-in;
+    color: $color;
+    background-color: $bg;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@mixin text($fs : $text-18, $fw: $text-semiBold , $c: $c-bluedark-400 , $lh : 28px ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+
+}
+
+@mixin text-tara($fs : $text-17, $fw: $text-regular , $c: $c-font-p-300 , $lh : 27px , $opacity : 0.8 ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+    opacity: $opacity;
+
+}
+
+@mixin text-footer($fs : $text-18, $fw: $text-regular , $c: $c-p-footer , $lh : 28px ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+
+}

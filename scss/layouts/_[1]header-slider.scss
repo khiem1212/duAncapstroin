@@ -1,0 +1,15 @@
+
+
+
+.header{
+    .container{
+
+        h1{
+            // @include titleSmall();
+            // @include Button();
+            // @include text();
+            @include text-tara();
+
+        }
+    }
+}
