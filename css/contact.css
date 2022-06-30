@@ -2,8 +2,7 @@
   font-family: 'Jost', sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -52,12 +51,10 @@ html {
     padding: 0px !important;
   }
   .star-Contact .star-Contact__content {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
   }
   .star-Contact .footer__contact__bottom .footer__content {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
   }
   .star-Contact .footer__contact__bottom p {
     margin-left: 0px !important;
@@ -66,8 +63,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .star-Contact .star-Contact__content {
-    -ms-grid-columns: (1fr)[2] !important;
-        grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .star-Contact .star-Contact__content .col {
     padding: 20px !important;
@@ -76,16 +72,12 @@ html {
 
 .star-Contact .star-Contact__content {
   padding-top: 3rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .star-Contact .star-Contact__content .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 30px;
   border-radius: 8px;
@@ -154,10 +146,8 @@ html {
 }
 
 .star-Contact .footer__contact .footer__contact__bottom .footer__content {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -184,7 +174,6 @@ html {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   color: #ffffff;
   background-color: #00a63f;
@@ -204,22 +193,8 @@ html {
   font-size: 18px;
 }
 
-.star-Contact .footer__contact .footer__contact__bottom #box::-webkit-input-placeholder {
-  -webkit-transform: translateY(-140%);
-          transform: translateY(-140%);
-}
-
-.star-Contact .footer__contact .footer__contact__bottom #box:-ms-input-placeholder {
-  transform: translateY(-140%);
-}
-
-.star-Contact .footer__contact .footer__contact__bottom #box::-ms-input-placeholder {
-  transform: translateY(-140%);
-}
-
 .star-Contact .footer__contact .footer__contact__bottom #box::placeholder {
-  -webkit-transform: translateY(-140%);
-          transform: translateY(-140%);
+  transform: translateY(-140%);
 }
 
 .star-Contact .footer__contact .footer__contact__bottom #box:focus {

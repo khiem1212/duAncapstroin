@@ -56,10 +56,23 @@
                 <a href="#" style="opacity: 1;" class="active">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
-                <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" id="pages" class="dropbtn" onclick="myFunction()">
+                    Pages
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
                 <a href="#">Contact</a>
 
             </nav>
+
+            <div class="dropdown">
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">BLOG POSTS</a>
+                  <a href="#">404 PAGE</a>
+                  <a href="#">LANDING PAGE</a>
+                  <a href="#">ELEMENTS PAGE</a>
+                </div>
+              </div>
             <div class="funtion">
                 <div class="homeSearch">
                     <i class="fa fa-search icon-material-search"></i>
@@ -943,6 +956,25 @@
                 header.classList.toggle("active-trans");
 
             })
+
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+            }
+
 
         </script>
 
