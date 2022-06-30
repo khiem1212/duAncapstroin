@@ -1,1 +1,505 @@
-/* No CSS *//*# sourceMappingURL=services.css.map */
+* {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: .5;
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  background: #009f4d;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  right: 15px;
+  bottom: 15px;
+  color: #fff;
+  position: fixed;
+}
+
+.Start-Services {
+  background-color: #f7f7f7;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+  .Start-Services .Start-Services__bottom {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+.Start-Services .Start-Services__top {
+  padding-top: 6rem;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.Start-Services .Start-Services__top h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7d7d;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.Start-Services .Start-Services__top p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #3f3a64;
+  line-height: 45px;
+}
+
+.Start-Services .Start-Services__bottom {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.Start-Services .Start-Services__bottom .col-content {
+  text-align: center;
+  padding: 45px 50px;
+  background-color: #fff;
+}
+
+.Start-Services .Start-Services__bottom .col-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3f3a64;
+  line-height: 28px;
+  margin-bottom: 1.5rem;
+}
+
+.Start-Services .Start-Services__bottom .col-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+  line-height: 27px;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.Start-Services .Start-Services__bottom .col-content h4 {
+  border: 1px solid #00a63f;
+  border-radius: 8px;
+  padding: 15px 50px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  color: #ffffff;
+  background-color: #00a63f;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.Start-Services .Start-Services__bottom .col-content h4:hover {
+  background-color: #008030;
+}
+
+.Start-Services .Start-Services__bottom .col {
+  max-width: 100%;
+}
+
+.Start-Services .Start-Services__bottom .col img {
+  width: 100%;
+  height: 100%;
+}
+
+.Start-Features {
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Start-Features .Start-Features__bottom {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .Start-Features .Start-Features__bottom .col {
+    padding: 50px 30px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .Start-Features .Start-Features__bottom {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .Start-Features .Start-Features__bottom .col {
+    padding: 50px 30px !important;
+  }
+}
+
+.Start-Features .Start-Features__top {
+  padding-top: 3rem;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.Start-Features .Start-Features__top p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7d7d;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.Start-Features .Start-Features__top h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #3f3a64;
+  line-height: 45px;
+}
+
+.Start-Features .Start-Features__bottom {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.Start-Features .Start-Features__bottom .col {
+  cursor: pointer;
+  padding: 50px 35px;
+  background-color: #f8f9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.Start-Features .Start-Features__bottom .col .right h2 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.Start-Features .Start-Features__bottom .col .right h2:hover {
+  color: #008030;
+}
+
+.Start-Features .Start-Features__bottom .col .right p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+  line-height: 27px;
+  opacity: 0.8;
+}
+
+.Start-Features .Start-Features__bottom .col .left i {
+  font-size: 38px;
+  width: 40px;
+  color: #009f4d;
+}
+
+.Start-Contact {
+  background: url(/img/aboutCover.jpg);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .Start-Contact .contact__conTent {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+.Start-Contact::before {
+  content: "";
+  background: rgba(29, 42, 55, 0.7);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.Start-Contact .contact__conTent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.Start-Contact .contact__conTent .left {
+  padding-top: 3rem;
+  padding-right: 3rem;
+}
+
+.Start-Contact .contact__conTent .left h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #f8f9fa;
+  display: block;
+}
+
+.Start-Contact .contact__conTent .left p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #3f3a64;
+  line-height: 45px;
+  color: #f8f9fa;
+}
+
+.Start-Contact .contact__conTent .left .left__col {
+  border-bottom: 1px solid #aaa;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Start-Contact .contact__conTent .left .left__col i {
+  font-size: 40px;
+  color: #f8f9fa;
+  display: block;
+}
+
+.Start-Contact .contact__conTent .left .left__col .col__content {
+  padding-left: 30px;
+}
+
+.Start-Contact .contact__conTent .left .left__col .col__content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #97a1a9;
+  line-height: 28px;
+  color: #eee;
+}
+
+.Start-Contact .contact__conTent .rightt {
+  padding: 60px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Start-Contact .contact__conTent .rightt h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.Start-Contact .contact__conTent .rightt p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+  line-height: 27px;
+  opacity: 0.8;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.Start-Contact .contact__conTent .rightt input {
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  text-transform: capitalize;
+  height: 60px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+  color: #666;
+  padding: 12px 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Start-Contact .contact__conTent .rightt .form-control {
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  text-transform: capitalize;
+  height: 60px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+  color: #666;
+  height: 101px;
+  padding: 12px 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Start-Contact .contact__conTent .rightt .btn {
+  border: 1px solid #00a63f;
+  border-radius: 8px;
+  padding: 15px 50px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  color: #ffffff;
+  background-color: #00a63f;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.Start-Contact .contact__conTent .rightt .btn:hover {
+  background-color: #008030;
+}
+
+.Start-MoreService {
+  background-color: #f7f7f7;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.Start-MoreService .Start-MoreService__top {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.Start-MoreService .Start-MoreService__top h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7d7d;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.Start-MoreService .Start-MoreService__top p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #3f3a64;
+  line-height: 45px;
+}
+
+.Start-MoreService .Start-MoreService__bottom {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Start-MoreService .Start-MoreService__bottom .col__content {
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+          box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+  background-color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.Start-MoreService .Start-MoreService__bottom .col__content:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.Start-MoreService .Start-MoreService__bottom img {
+  max-width: 65px;
+}
+
+.Start-MoreService .Start-MoreService__bottom h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3f3a64;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+.Start-MoreService .Start-MoreService__bottom p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+  line-height: 27px;
+  opacity: 0.8;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Start-MoreService .Start-MoreService__bottom {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
+  .Start-MoreService .Start-MoreService__bottom .col__content {
+    padding: 1.5rem;
+  }
+  .Start-MoreService .Start-MoreService__top p {
+    font-size: 32px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .Start-MoreService .Start-MoreService__bottom {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px;
+  }
+  .Start-MoreService .Start-MoreService__bottom .col__content {
+    padding: 1.5rem;
+  }
+  .Start-MoreService .Start-MoreService__top p {
+    font-size: 32px !important;
+  }
+}
+/*# sourceMappingURL=services.css.map */

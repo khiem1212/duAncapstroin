@@ -1,0 +1,66 @@
+.cover__About {
+
+  background: url(/img/aboutCover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background-color: rgba(29, 42, 55, 0.7);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .cover__About__content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 700px;
+    text-align: center;
+
+    h1 {
+      font-size: 35px;
+      line-height: 45px;
+      font-weight: 700;
+      color: white;
+    }
+
+    p {
+      color: #eee;
+      margin-top: 1rem;
+    }
+
+    .btn_video {
+      &:hover{
+        transform: scale(1.1);
+      }
+      margin-top: 1rem;
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      font-size: 22px;
+      padding-left: 5px;
+      text-align: center;
+      line-height: 65px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      transition: all .3s;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+
+}
+
+  

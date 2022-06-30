@@ -1,0 +1,104 @@
+.Start-MoreService {
+    background-color: #f7f7f7;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+  
+
+    .Start-MoreService__top {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            @include titleSmall;
+        }
+
+        p {
+            @include titleBig;
+        }
+    }
+
+    .Start-MoreService__bottom {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .col__content {
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+            background-color: #fff;
+            transition: .3s;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                
+              
+            } 
+        }
+
+        img {
+            max-width: 65px
+        }
+
+        h2 {
+            @include text;
+            margin-top: 25px
+        }
+
+        p {
+            @include text-tara;
+            margin-top: 25px;
+        }
+
+       
+
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .Start-MoreService__bottom {
+
+            grid-template-columns: repeat(2, 1fr) !important;
+
+            gap: 20px;
+
+            .col__content {
+                padding: 1.5rem;
+            }
+        }
+
+        .Start-MoreService__top {
+            p {
+                font-size: 32px !important;
+            }
+        }
+
+    }
+
+    @media (min-width: 0px) and (max-width: 767px) {
+        .Start-MoreService__bottom {
+
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            gap: 20px;
+
+            .col__content {
+                padding: 1.5rem;
+            }
+        }
+
+        .Start-MoreService__top {
+            p {
+                font-size: 32px !important;
+            }
+        }
+    }
+}
+
+

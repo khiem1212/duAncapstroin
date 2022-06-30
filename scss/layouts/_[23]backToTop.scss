@@ -1,0 +1,32 @@
+body{
+    scroll-behavior: smooth;
+}
+.cd-top--is-visible { // back-to-top button visible
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { // reduce button opacity if user keeps scrolling
+    opacity: .5;
+  }
+
+  .cd-top {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    background: #009f4d;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    position: fixed;
+  }
+  
