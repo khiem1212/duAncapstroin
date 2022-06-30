@@ -1,0 +1,137 @@
+.Start-Contact {
+
+    @media (min-width: 0px) and (max-width: 991px) {
+        .contact__conTent {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    background: url(/img/aboutCover.jpg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-size: 100%;
+
+    &::before {
+        content: "";
+
+        background: rgba(29, 42, 55, 0.7);
+        ;
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .contact__conTent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        .left {
+            padding-top: 3rem;
+            padding-right: 3rem;
+
+            h2 {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 30px;
+                letter-spacing: 1px;
+                color: #f8f9fa;
+                display: block;
+
+            }
+
+            p {
+                @include titleBig;
+                color: #f8f9fa;
+            }
+
+            .left__col {
+                border-bottom: 1px solid #aaa;
+                padding: 30px 0;
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 40px;
+                    color: #f8f9fa;
+                    display: block;
+                }
+
+                .col__content {
+                    padding-left: 30px;
+
+                    p {
+                        @include text-footer;
+                        color: #eee;
+
+                    }
+                }
+            }
+        }
+
+        .rightt {
+            padding: 60px;
+            background-color: white;
+            border-radius: 10px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            p {
+                @include text-tara;
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+
+            }
+
+            input {
+                margin-bottom: 20px;
+                background: #f7f7f7;
+                text-transform: capitalize;
+                height: 60px;
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 17px;
+                color: #666;
+
+                padding: 12px 25px;
+                box-shadow: none;
+            }
+
+            .form-control {
+                margin-bottom: 20px;
+                background: #f7f7f7;
+                text-transform: capitalize;
+                height: 60px;
+                border: none;
+                outline: none;
+                width: 100%;
+
+                font-size: 17px;
+                color: #666;
+                height: 101px;
+                padding: 12px 25px;
+                box-shadow: none;
+            }
+
+            .btn {
+                @include Button;
+
+                &:hover {
+                    background-color: #008030;
+                }
+            }
+        }
+    }
+}
