@@ -1,0 +1,129 @@
+
+.blog_home{
+
+    padding: 96px 0;
+
+    .container{
+
+        text-align: center;
+        span{
+            @include titleSmall();
+        }
+
+        h3{
+            @include titleBig();
+            margin-bottom: 48px;
+
+        }
+
+
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .col{
+
+                .card{
+                    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+                    border: 1px solid var(--border-color);
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+
+                    overflow: hidden;
+
+                    text-align: left;
+
+                    .card-header{
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .card-body{
+
+                        padding: 20px;
+                        p{
+                            @include text-tara();
+                        }
+                        h2{
+                            margin-top: 10px;
+                            @include text($text-20 , $text-semiBold, $c-bluedark-400, 28px  );
+                        }
+
+                    }
+
+                    .card-footer{
+                        display: grid;
+                        grid-template-columns: auto 1fr auto;
+                        padding: 12px 20px;
+                        border : 1px solid #eee;
+                        gap: 10px;
+                        align-items: center;
+
+                        img{
+                            display: block;
+                        }
+                        a{
+                            text-decoration: none;
+                            @include text();
+                            span{
+                                text-transform: none;
+                            }
+                        }
+
+                        p{
+                            @include text-tara();
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: getBreakPoint("lg")) {
+
+    }
+    @media screen and (max-width: getBreakPoint("md")) {
+
+        .container{
+            max-width: 720px;
+            padding: 0;
+
+            display: block;
+
+            .row{
+
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+        }
+
+    }
+    @media screen and (max-width: getBreakPoint("sm")) {
+
+        .container{
+            max-width: 540px;
+            padding: 0;
+
+            .row{
+
+                grid-template-columns: 1fr;
+                .col{
+
+                }
+            }
+
+        }
+
+    }
+    @media screen and (max-width: getBreakPoint("xs")) {
+        .container{
+            padding: 0 15px;
+        }
+
+    }
+}

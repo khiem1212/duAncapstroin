@@ -1,1 +1,138 @@
 
+
+.abouts_home{
+    padding: 100px 0;
+    .container{
+
+        .about_content{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .content_left{
+                max-width: 50%;
+
+                span{
+                    @include titleSmall();
+                }
+
+                h3{
+                    @include titleBig();
+                }
+
+                p{
+                    @include text-tara();
+                    padding-top: 24px;
+                }
+
+
+                ul{
+                    padding-top: 24px;
+
+                    li{
+                        list-style: none;
+                        margin-bottom: 15px;
+                        a{
+                            text-decoration: none;
+                            @include text();
+
+                            .fa{
+                                color: $c-green-400;
+                                opacity: .8;
+                                margin-right: 5px;
+                            }
+                            span{
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .content_right{
+                max-width: 50%;
+                display: flex;
+                .img_left{
+                    padding: 15px;
+                    max-width: 50%;
+                    img{
+                        max-width: 100%;
+                        border-radius: 10px;
+
+                    }
+
+                }
+
+                .img_right{
+                    width: 50%;
+                    padding: 15px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        margin-top: 24px;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: getBreakPoint("lg")) {
+
+    }
+    @media screen and (max-width: getBreakPoint("md")) {
+        .container{
+            max-width: 720px;
+            padding: 0;
+
+            .about_content{
+                display: block;
+                .content_left{
+                    max-width: 100%;
+                }
+                .content_right{
+                    max-width: 100%;
+                    margin-top: 48px;
+                }
+            }
+        }
+
+    }
+    @media screen and (max-width: getBreakPoint("sm")) {
+        .container{
+            max-width: 540px;
+
+            .about_content{
+                display: block;
+                .content_left{
+                    max-width: 100%;
+                }
+                .content_right{
+                    max-width: 100%;
+                    margin-top: 48px;
+                }
+            }
+        }
+
+    }
+    @media screen and (max-width: getBreakPoint("xs")) {
+        .container{
+            padding: 0 15px;
+
+            .about_content{
+                display: block;
+                .content_left{
+                    max-width: 100%;
+                }
+                .content_right{
+                    max-width: 100%;
+                    margin-top: 48px;
+                }
+            }
+        }
+
+    }
+}
