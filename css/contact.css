@@ -1094,4 +1094,36 @@ footer .footer__bottoms P {
 footer .footer__bottoms P span {
   color: #009f4d;
 }
+
+body {
+  scroll-behavior: smooth;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: .5;
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  background: #009f4d;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  right: 15px;
+  bottom: 15px;
+  color: #fff;
+  position: fixed;
+}
 /*# sourceMappingURL=contact.css.map */
